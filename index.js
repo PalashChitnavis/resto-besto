@@ -17,7 +17,7 @@ close.addEventListener('click' , () => {
 })
 
 window.onscroll = () => {
-    navbar.classList.toggle('active');
-    menu.classList.toggle('fa-times');
+    navbar.classList.remove('active');
+    menu.classList.remove('fa-times');
     searchForm.classList.remove('active')
 }
