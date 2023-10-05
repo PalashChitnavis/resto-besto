@@ -533,7 +533,12 @@ header .icons #menu-bars{
         font-size: 2rem;
     }
     .menu .box-container .box {
-        max-width: 60vw;
+        max-width: 80vw;
         min-width: 40vw;
+    }
+    .menu .box-container .box .content .something{
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
     }
 }
