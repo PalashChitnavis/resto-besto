@@ -15,9 +15,17 @@ searchIcon.addEventListener('click' , () => {
 close.addEventListener('click' , () => {
     searchForm.classList.toggle('active')
 })
-
 window.onscroll = () => {
     navbar.classList.remove('active');
     menu.classList.remove('fa-times');
     searchForm.classList.remove('active')
 }
+
+function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out')
+}
+function fadeOut(){
+    setInterval(loader , 3000)
+}
+
+window.onload = fadeOut
