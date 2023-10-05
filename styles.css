@@ -355,8 +355,9 @@ header .icons #menu-bars{
 }
 .menu .box-container .box .image{
     align-self: center;
-    height: 25rem;
+    width: 25rem;
     margin-top: 5rem;
+    aspect-ratio: 1 / 1;
 }
 .menu .box-container .box .image img{
     width: 100%;
@@ -410,7 +411,49 @@ header .icons #menu-bars{
 .menu .box-container .box .content .price{
     margin-left: 1rem;
 }
-
+.review .slide{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    position: relative;
+}
+.review .wrapper{
+    width: 85vw;
+}
+.review .slide .fa-quote-right{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #ccc;
+    font-size: 6rem;
+}
+.review .slide .user{
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+}
+.review .slide .user img{
+    height: 7rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.review .slide .user h3{
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+.review .slide .user i{
+    font-size: 1.3rem;
+    color: var(--green);
+}
+.review .slide p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--light);
+}
 
 
 
@@ -540,5 +583,8 @@ header .icons #menu-bars{
         display: flex;
         gap: 1.5rem;
         margin-top: 2rem;
+    }
+    .review .slide .user i{
+        font-size: .8rem;
     }
 }

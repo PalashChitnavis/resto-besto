@@ -216,7 +216,7 @@
         <div class="box-container">
             <div class="box">
                 <div class="image">
-                    <img src="./images/menu-1.jpg" alt="">
+                    <img src="./images/menu-5.jpg" alt="">
                     <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
@@ -293,7 +293,7 @@
             </div>
             <div class="box">
                 <div class="image">
-                    <img src="./images/menu-5.jpg" alt="">
+                    <img src="./images/menu-7.jpg" alt="">
                     <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
@@ -331,7 +331,7 @@
             </div>
             <div class="box">
                 <div class="image">
-                    <img src="./images/menu-7.jpg" alt="">
+                    <img src="./images/menu-1.jpg" alt="">
                     <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
@@ -386,14 +386,96 @@
                     <span class="price">$12.99/-</span>
                 </div>
             </div>
+    </section>
 
+    <section class="review" id="review">
+        <h3 class="sub-heading">customer's review</h3>
+        <h1 class="heading">what they say</h1>
+
+        <div class="swiper-container review-slider">
+            <div class="wrapper swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/user-1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>palash chitnavis</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
+                        autem facilis cumque, accusamus iure numquam.</p>
+                </div>
+                <div class="slide swiper-slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/user-2.jpg" alt="">
+                        <div class="user-info">
+                            <h3>makrand chitnavis</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
+                        autem facilis cumque, accusamus iure numquam.</p>
+                </div>
+                <div class="slide swiper-slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/user-3.jpg" alt="">
+                        <div class="user-info">
+                            <h3>buzo chitnavis</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
+                        autem facilis cumque, accusamus iure numquam.</p>
+                </div>
+                <div class="slide swiper-slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/user-4.jpg" alt="">
+                        <div class="user-info">
+                            <h3>dhawal chitnavis</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
+                        autem facilis cumque, accusamus iure numquam.</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <script src="index.js"></script>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
-        let swiper = new Swiper(".home-slider", {
+        var swiper = new Swiper(".home-slider", {
             spaceBetween: 30,
             centeredSlides: true,
             autoplay: {
@@ -405,6 +487,32 @@
                 clickable: true
             },
             loop: true,
+        });
+    </script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        var swiper = new Swiper(".review-slider", {
+            spaceBetween: 20,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            loop: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
         });
 
     </script>
