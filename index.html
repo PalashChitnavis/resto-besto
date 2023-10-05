@@ -20,7 +20,6 @@
             <a href="#dishes">dishes</a>
             <a href="#about">about</a>
             <a href="#menu">menu</a>
-            <a href="#review">review</a>
             <a href="#order">order</a>
         </nav>
         <div class="icons">
@@ -388,89 +387,72 @@
             </div>
     </section>
 
-    <section class="review" id="review">
-        <h3 class="sub-heading">customer's review</h3>
-        <h1 class="heading">what they say</h1>
+    <section class="order" id="order">
+        <h3 class="sub-heading">order now</h3>
+        <h1 class="heading">fresh and fast</h1>
 
-        <div class="swiper-container review-slider">
-            <div class="wrapper swiper-wrapper">
-                <div class="slide swiper-slide">
-                    <i class="fas fa-quote-right"></i>
-                    <div class="user">
-                        <img src="./images/user-1.jpg" alt="">
-                        <div class="user-info">
-                            <h3>palash chitnavis</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
-                        autem facilis cumque, accusamus iure numquam.</p>
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name">
                 </div>
-                <div class="slide swiper-slide">
-                    <i class="fas fa-quote-right"></i>
-                    <div class="user">
-                        <img src="./images/user-2.jpg" alt="">
-                        <div class="user-info">
-                            <h3>makrand chitnavis</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
-                        autem facilis cumque, accusamus iure numquam.</p>
+                <div class="input">
+                    <span>your number</span>
+                    <input type="number" placeholder="enter your number">
                 </div>
-                <div class="slide swiper-slide">
-                    <i class="fas fa-quote-right"></i>
-                    <div class="user">
-                        <img src="./images/user-3.jpg" alt="">
-                        <div class="user-info">
-                            <h3>buzo chitnavis</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
-                        autem facilis cumque, accusamus iure numquam.</p>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your order</span>
+                    <input type="text" placeholder="enter your order name">
                 </div>
-                <div class="slide swiper-slide">
-                    <i class="fas fa-quote-right"></i>
-                    <div class="user">
-                        <img src="./images/user-4.jpg" alt="">
-                        <div class="user-info">
-                            <h3>dhawal chitnavis</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vitae hic libero aperiam commodi
-                        autem facilis cumque, accusamus iure numquam.</p>
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="test" placeholder="extra with food">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>how much</span>
+                    <input type="number" placeholder="how many orders">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" id="" placeholder="enter your address" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" id="" placeholder="enter your message" cols="30" rows="10"></textarea>
                 </div>
             </div>
 
-        </div>
+            <input type="submit" value="order now" class="btn">
+        </form>
     </section>
+    <section class="footer">
+        <div class="share">
+            <a target="_blank" href="https://www.instagram.com/palash_chitnavis/" class="fab fa-instagram"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/palash-chitnavis-83b109254/"
+                class="fab fa-linkedin"></a>
+        </div>
 
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+        </div>
+
+        <div class="credit">created by <span>Palash Chitnavis</span></div>
+    </section>
     <script src="index.js"></script>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
@@ -488,33 +470,6 @@
             },
             loop: true,
         });
-    </script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
-        var swiper = new Swiper(".review-slider", {
-            spaceBetween: 20,
-            centeredSlides: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
-            loop: true,
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                640: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            }
-        });
-
     </script>
 </body>
 
